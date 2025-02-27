@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="newtodo.css">
+    <script defer src="newtodo.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1 class="header-title">Todo List</h1>
+            <div class="dark-light__icon">
+                <img src="./images/icon-sun.svg" alt="Light Mode" class="sun">
+                <img src="./images/icon-moon.svg" alt="Dark Mode" class="moon">
+            </div>
+        </header>
+
+        <!-- To-Do Form -->
+        <div class="main-content">
+            <form>
+                <input type="text" id="input" placeholder="Create a new todo...">
+            </form>
+
+            <!-- Task List -->
+            <ul id="list"></ul>
+
+            <!-- Filter Options -->
+            <div class="todo-filter">
+                <span class="all">All</span>
+                <span class="active">Active</span>
+                <span class="complated">Completed</span>
+                <span class="clear-complated">Clear Completed</span>
+            </div>
+
+            <!-- Items Left Counter -->
+            <div class="items-number">0 items left</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-basic">
+        <p class="copyright">Made with <span>&#x2665;</span> by Ritesh Bobade</p>
+    </div>
+
+</body>
+</html>

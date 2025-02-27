@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    background-image: url('./images/pngtree-modern-simple-elegant-gradinet-green-landing-page-website-background-picture-image_1455074.png');
+    background-color: hsl(235, 21%, 11%);
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Light Mode */
+body.active {
+    background-image: url('./images/abstract-white-monochrome-background-vector-32028465.png');
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(235, 21%, 11%);
+}
+
+/* Container */
+.container {
+    width: 50%;
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Dark-Light Mode Icons */
+.dark-light__icon img {
+    cursor: pointer;
+    width: 25px;
+}
+
+body.active .sun {
+    display: none;
+}
+
+.moon {
+    display: none;
+}
+
+body.active .moon {
+    display: block;
+}
+
+/* To-Do Form */
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    background-color: hsl(235, 24%, 19%);
+    color: #fff;
+    outline: none;
+}
+
+body.active input {
+    background-color: hsl(236, 33%, 92%);
+    color: black;
+}
+
+/* Task List */
+#list {
+    list-style: none;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid hsl(233, 14%, 35%);
+}
+
+.todo-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-message span {
+    border: 1px solid hsl(233, 14%, 35%);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todo-message span.active {
+    background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.todo-message span.active + div {
+    text-decoration: line-through;
+    color: hsl(236, 9%, 61%);
+}
+
+/* Delete Button */
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Filter Options */
+.todo-filter {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 5px;
+}
+
+.todo-filter span {
+    cursor: pointer;
+    color: hsl(236, 9%, 61%);
+}
+
+.todo-filter span:hover {
+    color: #fff;
+}
+
+body.active .todo-filter {
+    background-color: hsl(0, 0%, 98%);
+}
+
+body.active .todo-filter span:hover {
+    color: hsl(236, 9%, 61%);
+}
+
+/* Items Left Counter */
+.items-number {
+    margin-top: 10px;
+    font-size: 14px;
+    color: hsl(236, 9%, 61%);
+}
+
+/* Footer */
+.footer-basic {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: hsl(235, 21%, 11%);
+    color: hsl(0, 0%, 98%);
+    text-align: center;
+    font-size: 14px;
+}
+
+body.active .footer-basic {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(235, 21%, 11%);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-image: url('./images/pexels-pixabay-162389.png');
+    }
+
+    body.active {
+        background-image: url('./images/abstract-white-monochrome-background-vector-32028465.png');
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+
+
+
+/* Ensure the page takes at least full height */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Push the content up, keeping footer at the bottom */
+.container {
+    flex: 1;
+}
+
+/* Footer Styling */
+.footer-basic {
+    padding: 10px 0;
+    background-color: hsl(235, 21%, 11%);
+    color: hsl(0, 0%, 98%);
+    margin-top: auto; /* Pushes footer to the bottom */
+    text-align: center;
+}
