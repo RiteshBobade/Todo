@@ -54,6 +54,7 @@ body.active .sun {
 
 .moon {
     display: none;
+    color:#fff
 }
 
 body.active .moon {
