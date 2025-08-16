@@ -1,3 +1,6 @@
+## 🚀 Live Demo
+
+🔗 [score-tracker-m5r7.vercel.app](https://hood-ease.vercel.app)
 # 📝 Todo-App
 
 A minimal and responsive To-Do List application built using **HTML, CSS, and JavaScript**.  
