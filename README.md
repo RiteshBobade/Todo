@@ -1,6 +1,6 @@
 ## 🚀 Live Demo
 
-🔗 [score-tracker-m5r7.vercel.app](https://todo-app-psi-topaz-28.vercel.app)
+🔗 [Todo](https://todo-app-psi-topaz-28.vercel.app)
 # 📝 Todo-App
 
 A minimal and responsive To-Do List application built using **HTML, CSS, and JavaScript**.  
